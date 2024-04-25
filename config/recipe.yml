@@ -37,27 +37,27 @@ modules:
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-    install:
-      - com.microsoft.Edge
-      - net.mullvad.MullvadBrowser
-      - org.onlyoffice.desktopeditors
-      - one.ablaze.floorp
-      - com.github.zadam.trilium
-      - com.sindresorhus.Caprine
-      - org.signal.Signal
-      - io.github.shiftey.Desktop
-      - com.discordapp.Discord
-      - flathub org.kde.okular
-      - com.github.iwalton3.jellyfin-media-player
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-        # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
+      install:
+        - com.microsoft.Edge
+        - net.mullvad.MullvadBrowser
+        - org.onlyoffice.desktopeditors
+        - one.ablaze.floorp
+        - com.github.zadam.trilium
+        - com.sindresorhus.Caprine
+        - org.signal.Signal
+        - io.github.shiftey.Desktop
+        - com.discordapp.Discord
+        - flathub org.kde.okular
+        - com.github.iwalton3.jellyfin-media-player
+          # - org.mozilla.firefox
+          # - org.gnome.Loupe
+          # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+          # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
 
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-    remove:
-        # - org.gnome.eog
+        # only normal flatpak applications are (like Floorp Lightning web browser in this example).
+        # Installing different branches of the same Flatpak is not supported.
+      remove:
+          # - org.gnome.eog
   - type: gnome-extensions
     install:
       - weatheroclockCleoMenezesJr.github.io.v11
