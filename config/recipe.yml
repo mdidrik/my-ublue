@@ -20,6 +20,8 @@ modules:
   - type: rpm-ostree
     repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
+       - nextcloud-client
+       - nextcloud-client-nautilus
       # - micro
       # - starship
     remove:
@@ -36,7 +38,14 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        - one.ablaze.floorp
+         - com.microsoft.Edge
+         - net.mullvad.MullvadBrowser
+         - org.onlyoffice.desktopeditors
+         - one.ablaze.floorp
+         - com.github.zadam.trilium
+         - com.sindresorhus.Caprine
+         - org.signal.Signal
+         - io.github.shiftey.Desktop
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
