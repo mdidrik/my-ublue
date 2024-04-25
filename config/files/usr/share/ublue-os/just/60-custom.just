@@ -70,6 +70,23 @@ install-apps-misc:
     org.telegram.desktop \\
     tech.feliciano.pocket-casts
 
+# Install standard apps
+install-apps-standard:
+  flatpak install -y --system \\
+    com.microsoft.Edge \\
+    net.mullvad.MullvadBrowser \\
+    org.onlyoffice.desktopeditors \\
+    one.ablaze.floorp \\
+    com.github.zadam.trilium \\
+    com.sindresorhus.Caprine \\
+    org.signal.Signal \\
+    io.github.shiftey.Desktop \\ 
+    com.discordapp.Discord \\
+    flathub org.kde.okular \\
+    com.github.iwalton3.jellyfin-media-player
+
+
+
 # Give browsers permission to create PWAs (Progressive Web Apps)
 install-pwa-flatpak-overrides:
   flatpak override --system --filesystem=~/.local/share/applications --filesystem=~/.local/share/icons com.google.Chrome
