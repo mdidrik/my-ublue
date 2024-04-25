@@ -46,7 +46,9 @@ modules:
         - com.sindresorhus.Caprine
         - org.signal.Signal
         - io.github.shiftey.Desktop
-        #- flathub org.kde.okular
+        - org.kde.okular
+        - org.gnome.DejaDup
+        - com.discordapp.Discord
         - com.github.iwalton3.jellyfin-media-player
           # - org.mozilla.firefox
           # - org.gnome.Loupe
