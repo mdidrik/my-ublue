@@ -38,17 +38,17 @@ modules:
       repo-name: flathub
       repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
     install:
-         - com.microsoft.Edge
-         - net.mullvad.MullvadBrowser
-         - org.onlyoffice.desktopeditors
-         - one.ablaze.floorp
-         - com.github.zadam.trilium
-         - com.sindresorhus.Caprine
-         - org.signal.Signal
-         - io.github.shiftey.Desktop
-         - com.discordapp.Discord
-         - flathub org.kde.okular
-         - com.github.iwalton3.jellyfin-media-player
+      - com.microsoft.Edge
+      - net.mullvad.MullvadBrowser
+      - org.onlyoffice.desktopeditors
+      - one.ablaze.floorp
+      - com.github.zadam.trilium
+      - com.sindresorhus.Caprine
+      - org.signal.Signal
+      - io.github.shiftey.Desktop
+      - com.discordapp.Discord
+      - flathub org.kde.okular
+      - com.github.iwalton3.jellyfin-media-player
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
