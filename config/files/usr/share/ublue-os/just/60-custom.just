@@ -82,7 +82,7 @@ install-apps-standard:
     org.signal.Signal \\
     io.github.shiftey.Desktop \\
     flathub org.kde.okular \\
-    com.discordapp.Discord \\
+    #com.discordapp.Discord \\
     com.github.iwalton3.jellyfin-media-player
 
 
