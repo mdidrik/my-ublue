@@ -50,6 +50,11 @@ modules:
         - org.gnome.DejaDup
         - com.discordapp.Discord
         - com.github.iwalton3.jellyfin-media-player
+        - com.visualstudio.code
+        - org.localsend.localsend_app
+        - com.github.zocker_160.SyncThingy
+        - io.github.fabrialberio.pinapp
+        - com.bitwarden.desktop
           # - org.mozilla.firefox
           # - org.gnome.Loupe
           # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
