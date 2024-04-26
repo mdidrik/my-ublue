@@ -22,6 +22,7 @@ modules:
     install:
        - nextcloud-client
        - nextcloud-client-nautilus
+       - flameshot
       # - micro
       # - starship
     remove:
