@@ -69,22 +69,13 @@ modules:
 
   - type: gnome-extensions
     install:
-        - weatheroclockCleoMenezesJr.github.io.v11
-        - panoelhan.io.v22
-        - just-perfection-desktopjust-perfection.v28
-        - caffeinepatapon.info.v54
-        - quick-settings-tweaksqwreey.v25
-        - status-area-horizontal-spacingmathematical.coffee.gmail.com.v26
-        - thinkpad-battery-thresholdmarcosdalvarez.org.v44
-        - thinkpadthermalmoonlight.drive.vk.gmail.com.v26
-
-  - type: bling
-    install:
-      # - ublue-update # https://github.com/ublue-os/ublue-update
-      # - 1password # install 1Password (stable) and `op` CLI tool
-      # - dconf-update-service # a service unit that updates the dconf db on boot
-      # - gnome-vrr # enables gnome-vrr for your image
-        - laptop # installs TLP and configures your system for laptop usage
-      # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
+      - weatheroclockCleoMenezesJr.github.io.v11
+      - panoelhan.io.v22
+      - just-perfection-desktopjust-perfection.v28
+      - caffeinepatapon.info.v54
+      - quick-settings-tweaksqwreey.v25
+      - status-area-horizontal-spacingmathematical.coffee.gmail.com.v26
+      - thinkpad-battery-thresholdmarcosdalvarez.org.v44
+      - thinkpadthermalmoonlight.drive.vk.gmail.com.v26
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
