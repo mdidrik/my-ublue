@@ -1,4 +1,4 @@
-!include /usr/share/ublue-os/just/60-custom.just
+#!include /usr/share/ublue-os/just/60-custom.just
 
 ## Install all flatpaks defined in recipe.yml
 #setup-flatpaks:
