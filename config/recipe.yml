@@ -68,7 +68,7 @@ modules:
         - org.mozilla.firefox
 
   - type: gnome-extensions
-      install:
+    install:
         - weatheroclockCleoMenezesJr.github.io.v11
         - panoelhan.io.v22
         - just-perfection-desktopjust-perfection.v28
