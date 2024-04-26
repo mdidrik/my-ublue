@@ -50,7 +50,6 @@ modules:
         - org.gnome.DejaDup
         - com.discordapp.Discord
         - com.github.iwalton3.jellyfin-media-player
-        - com.visualstudio.code
         - org.localsend.localsend_app
         - com.github.zocker_160.SyncThingy
         - io.github.fabrialberio.pinapp
