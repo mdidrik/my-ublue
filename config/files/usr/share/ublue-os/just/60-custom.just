@@ -1,14 +1,14 @@
 !include /usr/share/ublue-os/just/60-custom.just
 
-# Install all flatpaks defined in recipe.yml
-setup-flatpaks:
+## Install all flatpaks defined in recipe.yml
+#setup-flatpaks:
   #!/usr/bin/env bash
-  echo 'Installing flatpaks from the ublue recipe ...'
-  flatpaks=$(yq -- '.firstboot.flatpaks[]' "/usr/share/ublue-os/recipe.yml")
-  for pkg in $flatpaks; do \
-      echo "Installing: ${pkg}" && \
-      flatpak install --user --noninteractive flathub $pkg; \
-  done
+#  echo 'Installing flatpaks from the ublue recipe ...'
+#  flatpaks=$(yq -- '.firstboot.flatpaks[]' "/usr/share/ublue-os/recipe.yml")
+#  for pkg in $flatpaks; do \
+#      echo "Installing: ${pkg}" && \
+#      flatpak install --user --noninteractive flathub $pkg; \
+#  done
 
 # Create a Fedora (bsherman custom) container
 distrobox-fedora-custom:
