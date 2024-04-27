@@ -8,6 +8,19 @@ setup-flatpak-repos:
   flatpak uninstall --system --noninteractive `flatpak list --all --columns origin,application|grep ^fedora|awk '{print $2}'|xargs`
   flatpak remote-delete --system fedora --force
 
+# Install system flatpaks for rebasers - min
+install-system-flatpaks:
+    #!/usr/bin/bash
+    IMAGE_INFO="/usr/share/ublue-os/image-info.json"
+    BASE_IMAGE_NAME=$(jq -r '."base-image-name"' < $IMAGE_INFO)
+    if [[ ${BASE_IMAGE_NAME} == 'silverblue' ]]; then
+        FLATPAKS="bluefin_flatpaks/flatpaks"
+    elif [[ ${BASE_IMAGE_NAME} == 'kinoite' ]]; then
+        FLATPAKS="aurora_flatpaks/flatpaks"
+    fi
+    FLATPAK_LIST="$(curl https://raw.githubusercontent.com/ublue-os/bluefin/main/${FLATPAKS} | tr '\n' ' ')"
+    flatpak --system -y install ${FLATPAK_LIST}
+
 # Install typical GNOME apps
 install-apps-gnome:
   flatpak install --noninteractive --system flathub \\
@@ -36,17 +49,7 @@ install-apps-gnome:
     it.mijorus.gearlever \\
     io.missioncenter.MissionCenter \\
     org.gustavoperedo.FontDownloader
-
-# Install Productivity and Communications apps
-install-apps-productivity:
-  flatpak install -y --system \\
-    com.google.Chrome \\
-    com.seafile.Client \\
-    com.simplenote.Simplenote \\
-    io.github.mimbrero.WhatsAppDesktop \\
-    org.signal.Signal \\
-    us.zoom.Zoom
-
+    
 # Install Creative Media Apps
 install-apps-creative:
   flatpak install -y --system \\
@@ -57,24 +60,12 @@ install-apps-creative:
     org.kde.kdenlive \\
     org.kde.krita
 
-# Install Other misc apps for my home users
-install-apps-misc:
-  flatpak install -y --system \\
-    com.belmoussaoui.Obfuscate \\
-    com.discordapp.Discord \\
-    com.skype.Client \\
-    com.slack.Slack \\
-    de.haeckerfelix.Fragments \\
-    org.gnome.Firmware \\
-    org.gnome.seahorse.Application \\
-    org.telegram.desktop \\
-    tech.feliciano.pocket-casts
-
 # Install standard apps
 install-apps-standard:
   flatpak install -y --system \\
     com.microsoft.Edge \\
     net.mullvad.MullvadBrowser \\
+    com.belmoussaoui.Obfuscate \\
     org.onlyoffice.desktopeditors \\
     one.ablaze.floorp \\
     com.github.zadam.trilium \\
@@ -84,7 +75,10 @@ install-apps-standard:
     org.kde.okular \\
     com.discordapp.Discord \\
     com.visualstudio.code \\
+    com.simplenote.Simplenote \\
+    de.haeckerfelix.Fragments \\
     com.github.iwalton3.jellyfin-media-player
+
 
 # Give browsers permission to create PWAs (Progressive Web Apps)
 install-pwa-flatpak-overrides:
