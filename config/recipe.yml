@@ -55,6 +55,7 @@ modules:
         - com.github.zocker_160.SyncThingy
         - io.github.fabrialberio.pinapp
         - com.bitwarden.desktop
+        - app.ytmdesktop.ytmdesktop
           # - org.mozilla.firefox
           # - org.gnome.Loupe
           # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
@@ -65,7 +66,9 @@ modules:
       remove:
        # - org.gnome.eog
         - org.mozilla.Thunderbird
+        - org.mozilla.firefox.Locale
         - org.mozilla.firefox
+        - org.mozilla.firefox.Locale
 
   - type: gnome-extensions
     install:
