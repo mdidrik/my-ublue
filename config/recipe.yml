@@ -70,8 +70,8 @@ modules:
         - org.mozilla.firefox
         - org.mozilla.firefox.Locale
 
-  - type: gnome-extensions
-    install:
+  #- type: gnome-extensions
+    #install:
       #- weatheroclockCleoMenezesJr.github.io.v11
       #- panoelhan.io.v22
       #- just-perfection-desktopjust-perfection.v28
