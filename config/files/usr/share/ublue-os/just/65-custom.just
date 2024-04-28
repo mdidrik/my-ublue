@@ -115,6 +115,18 @@ install-games-steam:
     com.valvesoftware.Steam \\
     com.valvesoftware.Steam.Utility.gamescope
 
+# Install Gnome extensions standard
+install-gnome-extensions-standard:
+  pip install --upgrade gnome-extensions-cli
+  gext install weatheroclockCleoMenezesJr.github.io
+  gext install panoelhan.io
+  gext install just-perfection-desktopjust-perfection
+  gext install quick-settings-tweaksqwreey
+  gext install status-area-horizontal-spacingmathematical.coffee.gmail.com
+  gext install thinkpad-battery-thresholdmarcosdalvarez.org
+  gext install thinkpadthermalmoonlight.drive.vk.gmail.com
+
+
 # Install virtualization stack (libvirt/virt-manager/etc)
 install-virtualization:
   rpm-ostree install libvirt-client libvirt-daemon-kvm virt-install virt-manager
