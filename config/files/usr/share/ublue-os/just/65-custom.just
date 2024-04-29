@@ -116,7 +116,7 @@ install-games-steam:
     com.valvesoftware.Steam.Utility.gamescope
 
 # Get Gnome extensions standard
-get-gnome-extensions-standard:
+get-gnome-extensions:
     pip install --upgrade gnome-extensions-cli
     gext install weatheroclockCleoMenezesJr.github.io
     gext install panoelhan.io
