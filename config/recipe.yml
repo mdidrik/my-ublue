@@ -47,7 +47,7 @@ modules:
         - com.sindresorhus.Caprine
         - org.signal.Signal
         - io.github.shiftey.Desktop
-        - org.kde.okular
+        - org.kde.okular    com.visualstudio.code \\
         - org.gnome.DejaDup
         - com.discordapp.Discord
         - com.github.iwalton3.jellyfin-media-player
@@ -55,7 +55,7 @@ modules:
         - com.github.zocker_160.SyncThingy
         - io.github.fabrialberio.pinapp
         - com.bitwarden.desktop
-        - app.ytmdesktop.ytmdesktop
+        #- app.ytmdesktop.ytmdesktop
           # - org.mozilla.firefox
           # - org.gnome.Loupe
           # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).

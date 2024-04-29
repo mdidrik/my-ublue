@@ -61,7 +61,6 @@ install-apps-standard:
     io.github.shiftey.Desktop \\
     org.kde.okular \\
     com.discordapp.Discord \\
-    com.visualstudio.code \\
     com.simplenote.Simplenote \\
     de.haeckerfelix.Fragments \\
     com.github.iwalton3.jellyfin-media-player
