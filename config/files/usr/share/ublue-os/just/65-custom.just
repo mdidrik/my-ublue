@@ -118,8 +118,10 @@ install-games-steam:
 # Get Gnome extensions standard
 get-gnome-extensions-standard:
     pip install --upgrade gnome-extensions-cli
+    #WeatherOClock
     gext install 5470
-    gext install panoelhan.io
+    #Pano-Clipboard Manager
+    gext install 5278
     gext install just-perfection-desktopjust-perfection
     gext install quick-settings-tweaksqwreey
     gext install status-area-horizontal-spacingmathematical.coffee.gmail.com
