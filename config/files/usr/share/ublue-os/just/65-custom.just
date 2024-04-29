@@ -64,7 +64,9 @@ install-apps-standard:
     com.discordapp.Discord \\
     org.gnome.DejaDup \\
     de.haeckerfelix.Fragments \\
-    com.github.iwalton3.jellyfin-media-player
+    com.github.iwalton3.jellyfin-media-player \\
+    com.github.zocker_160.SyncThingy \\
+    io.github.fabrialberio.pinapp
 
 
 # Give browsers permission to create PWAs (Progressive Web Apps)
