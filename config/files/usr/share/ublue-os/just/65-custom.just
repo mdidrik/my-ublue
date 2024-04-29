@@ -118,7 +118,7 @@ install-games-steam:
 # Get Gnome extensions standard
 get-gnome-extensions-standard:
     pip install --upgrade gnome-extensions-cli
-    gext install weatheroclockCleoMenezesJr.github.io
+    gext install 5470
     gext install panoelhan.io
     gext install just-perfection-desktopjust-perfection
     gext install quick-settings-tweaksqwreey
