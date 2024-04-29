@@ -122,8 +122,6 @@ get-gnome-extensions-standard:
     gext install 5470    
     #Pano-Clipboard Manager
     gext install 5278
-    #Vitals
-    gext install 1460
     #just-perfection
     gext install 3843
     #[QSTweak]-Quick-Setting-Tweaker 
@@ -133,7 +131,7 @@ get-gnome-extensions-standard:
     #Thinkpad-Battery-Threshold 
     gext install 4798
     #ThinkPad Thermal
-    gext install 986thinkpadthermalmoonlight.drive.vk.gmail.com
+    gext install 986
 
 
 # Install virtualization stack (libvirt/virt-manager/etc)
