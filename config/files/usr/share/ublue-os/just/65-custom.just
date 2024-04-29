@@ -59,9 +59,10 @@ install-apps-standard:
     com.sindresorhus.Caprine \\
     org.signal.Signal \\
     io.github.shiftey.Desktop \\
+    org.localsend.localsend_app \\
     org.kde.okular \\
     com.discordapp.Discord \\
-    com.simplenote.Simplenote \\
+    org.gnome.DejaDup \\
     de.haeckerfelix.Fragments \\
     com.github.iwalton3.jellyfin-media-player
 
@@ -131,6 +132,8 @@ get-gnome-extensions-standard:
     gext install 4798
     #ThinkPad Thermal
     gext install 986
+    #caffein
+    gext install 517
 
 
 # Install virtualization stack (libvirt/virt-manager/etc)

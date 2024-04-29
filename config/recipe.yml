@@ -47,7 +47,7 @@ modules:
         - com.sindresorhus.Caprine
         - org.signal.Signal
         - io.github.shiftey.Desktop
-        - org.kde.okular    com.visualstudio.code \\
+        - org.kde.okular
         - org.gnome.DejaDup
         - com.discordapp.Discord
         - com.github.iwalton3.jellyfin-media-player
@@ -55,6 +55,7 @@ modules:
         - com.github.zocker_160.SyncThingy
         - io.github.fabrialberio.pinapp
         - com.bitwarden.desktop
+        - org.localsend.localsend_app
         #- app.ytmdesktop.ytmdesktop
           # - org.mozilla.firefox
           # - org.gnome.Loupe
