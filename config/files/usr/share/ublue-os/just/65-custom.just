@@ -119,14 +119,21 @@ install-games-steam:
 get-gnome-extensions-standard:
     pip install --upgrade gnome-extensions-cli
     #WeatherOClock
-    gext install 5470
+    gext install 5470    
     #Pano-Clipboard Manager
     gext install 5278
-    gext install just-perfection-desktopjust-perfection
-    gext install quick-settings-tweaksqwreey
-    gext install status-area-horizontal-spacingmathematical.coffee.gmail.com
-    gext install thinkpad-battery-thresholdmarcosdalvarez.org
-    gext install thinkpadthermalmoonlight.drive.vk.gmail.com
+    #Vitals
+    gext install 1460
+    #just-perfection
+    gext install 3843
+    #[QSTweak]-Quick-Setting-Tweaker 
+    gext install 5446
+    #Status-Area-Horizontal-Spacing
+    gext install 355
+    #Thinkpad-Battery-Threshold 
+    gext install 4798
+    #ThinkPad Thermal
+    gext install 986thinkpadthermalmoonlight.drive.vk.gmail.com
 
 
 # Install virtualization stack (libvirt/virt-manager/etc)
